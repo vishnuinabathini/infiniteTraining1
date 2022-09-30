@@ -42,13 +42,19 @@ class ItemType{
     class internationalFilmFestival{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         String userName = "";
         System.out.println("Enter the name of the user" + userName);
         String username = sc.next();
+
         double advanceDeposit =sc.nextDouble();
-        System.out.printf("%.2f",advanceDeposit);
+        System.out.printf(" the advance amount %.2f",advanceDeposit);
+       // double advanceDeposit = sc.nextDouble();
+
         double cateringCostPerDay = sc.nextDouble();
-        System.out.printf("%.2f",cateringCostPerDay);
+        System.out.printf("casting cost per day %.2f",cateringCostPerDay);
+     //   double cateringCostPerDay = sc.nextDouble();
+
         ItemType itemtype= new ItemType();
         itemtype.setUserName(username);
         itemtype.setAdvanceDeposit(advanceDeposit);
