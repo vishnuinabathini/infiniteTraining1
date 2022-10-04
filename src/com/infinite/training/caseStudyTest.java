@@ -44,15 +44,19 @@ class ItemType{
         Scanner sc = new Scanner(System.in);
 
         String userName = "";
-        System.out.println("Enter the name of the user" + userName);
+        System.out.println("Enter the name of the user" );
         String username = sc.next();
 
-        double advanceDeposit =sc.nextDouble();
-        System.out.printf(" the advance amount %.2f",advanceDeposit);
-       // double advanceDeposit = sc.nextDouble();
 
+    // double advanceDeposit= 0;
+       // double advanceDeposit =sc.nextDouble();vi
+
+        System.out.println(" Enter the advance amount ");
+
+      double advanceDeposit = sc.nextDouble();
+        System.out.printf("costing cost per day %.2f",advanceDeposit);
         double cateringCostPerDay = sc.nextDouble();
-        System.out.printf("casting cost per day %.2f",cateringCostPerDay);
+        System.out.printf("costing cost per day %.2f",cateringCostPerDay);
      //   double cateringCostPerDay = sc.nextDouble();
 
         ItemType itemtype= new ItemType();
