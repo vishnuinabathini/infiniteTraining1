@@ -1,6 +1,6 @@
 package com.infinite.training;
 
-class Customer1 {
+abstract class Customer1 {
     private String customerId;
     private String customerName;
     public Customer1() {
@@ -30,6 +30,8 @@ class Customer1 {
         System.out.println("Customer Name : " + customerName);
         System.out.println();
     }
+
+    public abstract void display();
 }
 
 
@@ -40,6 +42,12 @@ public class RegularCustomer extends Customer1 {
         this.discount = 5.0f;
         System.out.println("Child Constructor");
     }
+
+    @Override
+    public void display() {
+
+    }
+
     public float getDiscount() {
         return discount;
     }

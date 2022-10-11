@@ -14,6 +14,9 @@ class Employee{
     String empAddress;
     String empDepartment;
 
+    public Employee(int i, String john, double v) {
+    }
+
     public String getEmpId() {
         return empId;
     }
@@ -96,7 +99,7 @@ class EmployeeTest {
         EmployeeTest employeeTest= new EmployeeTest();
         Employee[] employees = new Employee[10];
         for(int i=0;i<=9;i++) {
-            employees[i] = new Employee();
+            employees[i] = new Employee(i,"vishnu",2.5f);
             employeeTest.func(employees[i]);
 
         }
