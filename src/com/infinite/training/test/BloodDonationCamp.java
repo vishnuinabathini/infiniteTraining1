@@ -1,7 +1,6 @@
 package com.infinite.training.test;
 
-
-
+import java.util.Date;
 import java.util.Scanner;
 
 class Person {
@@ -18,6 +17,7 @@ class Person {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public String getDateOfBirth() {
         return dateOfBirth;
@@ -99,8 +99,10 @@ public class BloodDonationCamp {
                 Donor donor = new Donor();
                 System.out.println("Enter the name : ");
                 donor.setName(s.next());
+             //   Scanner sc= new Scanner(System.in);
                 System.out.println("Enter Date of Birth : ");
-                donor.setDateOfBirth(s.next());
+               // donor.setDateOfBirth(sc.next( "YYYY-MM-DD"));
+                donor.setDateOfBirth(s.next("dd-MM-yyyy"));
                 System.out.println("Enter Gender : ");
                 donor.setGender(s.next());
                 System.out.println("Enter Mobile Number : ");
